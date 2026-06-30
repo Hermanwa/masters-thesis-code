@@ -1,5 +1,7 @@
 # Sampling bias in Norwegian biodiversity occurrence data
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21080311.svg)](https://doi.org/10.5281/zenodo.21080311)
+
 R (and a little Python) code accompanying my thesis on **spatial sampling
 bias in species-occurrence data from Norway**, including a validation against
 independent ANO (Arealrepresentativ naturovervåking) vascular-plant survey
