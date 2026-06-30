@@ -31,13 +31,10 @@ effective resolution **1 km** (not the 500 m modelling grid). ANO points are
 reprojected to 25833 *metres* in `02`, then **divided by 1000** and extracted by
 raw coordinate in `03`. Verified: extraction returns sensible occupancy (alpine
 species high in the north) and bias (most negative in Tromsø). Validation is
-therefore at the **1 km** saved-prediction resolution — state this in the thesis.
+therefore at the **1 km** saved-prediction resolution
 
 ## Key modelling note
 This validates the **corrected predictions** against an unbiased survey. The
 absence logic relies on ANO plots being exhaustive for vascular plants, so a
 non-recorded modelled species is a true absence. That assumption is exactly what
 fails for fungi (no exhaustive survey, no real absences).
-
-⚠ First runnable draft, written without executing R here — expect to fix paths
-and small issues on first run.
