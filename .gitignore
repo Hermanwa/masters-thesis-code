@@ -51,6 +51,10 @@ newbirds/
 fungi/
 fungi_12reg/
 
+# Transient run logs
+appendix_run.log
+*.log
+
 # ============================================================
 # Keep provenance + docs even though the patterns above are broad.
 # (git applies the last matching rule, so these un-ignore them.)
@@ -60,3 +64,11 @@ fungi_12reg/
 !README_gbif_setup.txt
 !gbif_data/CITATION.txt
 !ano_validation/output/ano_download_citation.txt
+
+# ============================================================
+# Thesis appendix figures — intentionally committed so they can be
+# linked from the thesis appendix (overrides the broad *.png/*.pdf/*.csv
+# ignores above for this folder only).
+# ============================================================
+!thesis_appendix_figures/
+!thesis_appendix_figures/**
