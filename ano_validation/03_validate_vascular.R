@@ -88,7 +88,7 @@ if (length(bias_paths)) {
   # per-plot Brier across species (lower = better)
   obsM <- as.matrix(pa_mat[ord, species_eval]); obsM[is.na(obsM)] <- NA
   plots$brier <- rowMeans((P - obsM)^2, na.rm = TRUE)
-  cc <- cor(plots$bias, plots$brier, use = "complete.obs", method = "spearman")
+  cc <- cor(abs(plots$bias), plots$brier, use = "complete.obs", method = "spearman")
   cat(sprintf("\n=== Bias diagnostic ===\nSpearman(bias, per-plot Brier) = %.3f\n", cc))
   cat("  ~0 => correction holds across the bias gradient; strongly +ve => the\n",
       "  model still errs where it flags high sampling bias.\n")
